@@ -1,19 +1,13 @@
 // 1760142 - Nguyễn Nhật Ninh
-const http = require('http')
+const express = require('express')
 const port = process.env.PORT || 3000;
 
-const requestHandler = (request, response) => {
-  const url = new URL(request.url, `http://${request.headers.host}`);
-  const name = url.searchParams.get('name') || 'Word';
-  response.end(`Hello ${name} Node.js Server!`);
-}
+const app = express();
 
-const server = http.createServer(requestHandler);
-
-server.on('error', function (err) {
-  console.log('Some thing bad happened', err);
+app.get('/',function(req,res){
+  const name = req.query.name||'world';
+  res.end(`Hello ${name} from express`);
 });
 
-server.listen(port, function () {
-  console.log(`Server is listening on ${port}`);
-});
+app.listen(port);
+console.log(`Sever is listening on port ${port}`);
