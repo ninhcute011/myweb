@@ -1,0 +1,12 @@
+{
+  "name": "web2-nodejs-1760142-ninh",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "\"Ninh Nguyen <1760142@student.hcmus.edu.vn>",
+  "license": "MIT"
+}
