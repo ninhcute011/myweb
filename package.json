@@ -10,6 +10,19 @@
   "author": "\"Ninh Nguyen <1760142@student.hcmus.edu.vn>",
   "license": "MIT",
   "dependencies": {
+    "ejs": "^3.1.2",
     "express": "^4.17.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ninhcute011/myweb.git).git"
+  },
+  "bugs": {
+    "url": "https://github.com/ninhcute011/myweb.git)/issues"
+  },
+  "homepage": "https://github.com/ninhcute011/myweb.git)#readme",
+  "keywords": [
+    "c"
+  ]
 }
