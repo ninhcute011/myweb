@@ -17,5 +17,7 @@ app.get('/covid19',function(req,res){
   res.render('covid19');
 });
 
+app.use(express.static('public'))
+
 app.listen(port);
 console.log(`Sever is listening on port ${port}`);
